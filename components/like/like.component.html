@@ -1,1 +1,12 @@
-<p>like works!</p>
+<ul>
+    <li 
+        (click)="click_like($event)"
+        [ngClass]="{
+            'liked': has_liked()
+        }">Like</li>
+    <li 
+        (click)="click_dislike($event)"
+        [ngClass]="{
+            'disliked': has_disliked()
+        }">DisLike</li>
+</ul>
